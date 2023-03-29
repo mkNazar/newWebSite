@@ -145,3 +145,146 @@ body {
 main {
   flex: 1 1 auto;
 }
+.category {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 0.5rem;
+  padding: 0.3125rem 0.625rem;
+  display: inline-block;
+  color: #fff;
+  font-family: Roboto, sans-serif;
+  font-size: 0.625rem;
+  line-height: 120%;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+.category:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+.title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 127.777778%;
+  color: #ffffffff;
+}
+.text {
+  font: 0.75rem;
+  line-height: 166.666667%;
+}
+
+/* .home {
+} */
+
+.home__sections {
+  display: grid;
+  gap: 6.25rem;
+}
+/* .home__main-slider {
+} */
+@media (max-width: 991.98px) {
+  .home__sections {
+    gap: 4.375rem;
+  }
+}
+@media (max-width: 767.98px) {
+  .home__sections {
+    gap: 2.5rem;
+  }
+}
+
+.main-slider {
+  min-width: 0;
+}
+.main-slider__wrapper {
+  display: flex;
+}
+
+.main-slider__slide {
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  background-color: #343a40;
+}
+
+.main-slider__bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.main-slider__container {
+  min-width: 100vh;
+  z-index: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+  gap: 0.9375rem;
+  padding-top: 6.25rem;
+  padding-bottom: 8.75rem;
+}
+
+.main-slider__title {
+  max-width: 33.125rem;
+}
+
+.main-slider__body {
+  color: #e5e5e5;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6875rem;
+}
+
+.main-slider__date {
+  line-height: 125%;
+  display: flex;
+  gap: 0.6875rem;
+  align-items: center;
+}
+
+.main-slider__date::after {
+  content: '';
+  width: 1.875rem;
+  height: 0.0625rem;
+  background-color: #e5e5e5;
+}
+
+.main-slider__text {
+  max-width: 26.25rem;
+}
+
+/* // .main-slider__bullets
+
+  &__bullets {
+  }
+} */
+
+.bullets {
+  position: relative;
+  z-index: 2;
+  margin-top: -8.75rem;
+}
+/* .bullets__container{} */
+
+.bullets__items {
+  display: flex;
+  align-items: center;
+  height: 8.75rem;
+}
+.bullets__items .swiper-pagination-bulets {
+  flex: 0 0 0.5rem;
+  height: 0.5rem;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0.2;
+  transition: opacity 0.3s;
+  cursor: pointer;
+}
+.bullets__items .swiper-pagination-bulets-active {
+  opacity: 1;
+}
